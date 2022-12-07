@@ -1,0 +1,150 @@
+header {
+  background-color: var(--main-yellow);
+  padding: 1rem 0;
+  width: 100%;
+}
+
+.header-logo-search {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 12px;
+}
+
+.header-logo {
+  width: 25%;
+}
+
+.header-logo img {
+  width: 180px;
+}
+
+.search-container {
+  width: 60%;
+  flex-grow: 0.5;
+}
+
+.header-search {
+  width: 100%;
+  position: relative;
+}
+
+.header-search-input {
+  border: none;
+  width: inherit;
+  height: 34px;
+  box-shadow: 0 1px 2px 0 rgb(0 0 0 / 10%);
+  color: var(--main-dark-gray);
+  padding: 0 12px;
+}
+
+.header-search-input::placeholder {
+  color: lightgray;
+}
+
+.header-search-button {
+  position: absolute;
+  right: 3%;
+  top: 25%;
+  background: none;
+  border: none;
+  color: #c3c3c3;
+  cursor: pointer;
+}
+
+.header-info {
+  text-align: center;
+}
+
+.header-info p {
+  font-size: 13px;
+}
+
+.header-info i {
+  font-size: 16px;
+  margin-right: 10px;
+}
+
+.header-nav {
+  text-align: center;
+  margin-top: 12px;
+}
+
+.nav-icon {
+  display: none;
+  font-size: 21px;
+  cursor: pointer;
+}
+
+.nav-mobile {
+  display: none;
+}
+
+.nav-mobile {
+  list-style: none;
+}
+
+.nav-mobile li a,
+.nav-desktop-main li a,
+.nav-desktop-user li a {
+  color: var(--main-blue);
+}
+
+.nav-desktop-main,
+.nav-desktop-user {
+  list-style: none;
+  width: 50%;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-desktop-user {
+  justify-content: end;
+}
+
+.nav-desktop {
+  display: flex;
+  padding: 0 2rem;
+}
+
+.nav-desktop li {
+  margin-right: 14px;
+}
+
+@media (max-width: 1023px) {
+  .nav-icon {
+    display: block;
+    color: var(--main-blue);
+  }
+
+  .nav-icon i {
+    padding: 6px;
+    border-radius: 3px;
+    background-color: var(--main-blue);
+    color: white;
+  }
+
+  .nav-mobile {
+    padding: initial;
+    margin-top: 14px;
+  }
+
+  .nav-mobile li {
+    margin-bottom: 10px;
+  }
+
+  .nav-desktop {
+    display: none;
+  }
+}
+
+@media (max-width: 449px) {
+  .header-logo {
+    width: auto;
+    margin-bottom: 12px;
+  }
+}

@@ -1,0 +1,39 @@
+footer {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 2.5rem;
+  padding: 2.5rem 0 1.5rem 0;
+}
+
+.footer-info {
+  margin-bottom: 3.5rem;
+  width: 250px;
+  color: var(--main-dark-gray);
+}
+
+.footer-info h3,
+.footer-info p {
+  margin: 0;
+}
+
+.footer-info i {
+  font-size: 2em;
+  margin-bottom: 10px;
+  color: var(--main-celeste);
+}
+
+.footer-info:nth-child(3) {
+  margin-bottom: 3rem;
+}
+
+.copyright {
+  color: var(--main-dark-gray);
+}
+
+@media (min-width: 768px) {
+  .footer-info {
+    width: 350px;
+  }
+}

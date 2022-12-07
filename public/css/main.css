@@ -1,0 +1,145 @@
+main {
+  text-align: center;
+  background-color: var(--main-light-gray);
+}
+
+.carrousel img {
+  width: 100%;
+}
+
+.hero {
+  margin-bottom: 1rem;
+}
+
+.recomendados {
+  margin-top: 0.5rem;
+}
+
+.ofertas {
+  margin-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.gallery-items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.section-title {
+  margin-bottom: 14px;
+  font-size: 21px;
+  color: var(--main-dark-gray);
+}
+
+.item {
+  background-color: white;
+  width: 85%;
+  border-radius: 12px;
+  box-shadow: -1px 2px 10px 0px rgba(0, 0, 0, 0.1);
+  margin-bottom: 12px;
+  cursor: pointer;
+  transition: ease-in 0.1s;
+}
+
+.item-img {
+  width: 85%;
+}
+
+.item-info {
+  border-top: 1px solid var(--main-light-gray);
+  padding: 15px;
+  text-align: left;
+  position: relative;
+}
+
+.item-nombre {
+  margin-top: 0;
+  margin-top: 12px;
+  display: none;
+  font-size: 12px;
+  color: var(--main-dark-gray);
+}
+
+.item-precio,
+.item-descuento {
+  margin: 0;
+  display: inline;
+}
+
+.item-precio-container {
+  display: flex;
+  align-items: center;
+}
+
+.item-precio {
+  font-size: 20px;
+  margin-right: 9px;
+}
+
+.item-descuento {
+  color: var(--main-green);
+  font-size: 12px;
+}
+
+.envio-icon-container {
+  border: 1px solid var(--main-green);
+  padding: 5px;
+  border-radius: 50%;
+  color: var(--main-green);
+  font-size: 14px;
+  position: absolute;
+  right: 7%;
+  top: -15%;
+}
+
+.item-envio-full,
+.item-envio-gratis {
+  margin-top: 6px;
+  margin-bottom: 0;
+  color: var(--main-green);
+  font-weight: bold;
+}
+
+.item-envio-full {
+  font-style: italic;
+}
+
+.item-envio-gratis {
+  font-size: 14px;
+}
+
+.item:hover {
+  box-shadow: -1px 4px 20px 0px rgba(0, 0, 0, 0.3);
+}
+
+@media (min-width: 361px) {
+}
+
+@media (min-width: 768px) {
+  .item {
+    width: 38%;
+  }
+  .item-nombre {
+    display: block;
+  }
+
+  .section-title {
+    text-align: left;
+    margin-left: 8%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .item {
+    width: 23%;
+  }
+
+  .item-nombre {
+    font-size: 14px;
+  }
+
+  .section-title {
+    margin-left: 2%;
+  }
+}

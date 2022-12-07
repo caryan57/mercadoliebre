@@ -1,0 +1,37 @@
+/* Los import deben ir primero de todo */
+@import 'header.css';
+@import 'main.css';
+@import 'footer.css';
+
+:root {
+  --main-yellow: #eac926;
+  --main-blue: #03264c;
+  --main-celeste: #1259c3;
+  --main-dark-gray: #666;
+  --main-light-gray: #ebebeb;
+  --main-green: #39b54a;
+  --nunito: 'Nunito Sans', 'sans-serif';
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--nunito);
+  box-sizing: border-box;
+}
+
+p {
+  font-size: 12px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.show {
+  display: block;
+}
