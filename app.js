@@ -13,3 +13,7 @@ app.set('views', path.resolve(__dirname, 'src/views'));
 app.get('/', (req, res) => {
   return res.sendFile(app.get('views') + '/home.html');
 });
+
+app.get('/register', (req, res) => {
+  return res.sendFile(app.get('views') + '/register.html');
+});

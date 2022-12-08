@@ -1,0 +1,72 @@
+.form-container {
+  padding: 2rem 1rem;
+}
+
+.form-container form {
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 0.375rem;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.form-control {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  margin-bottom: 1rem;
+}
+
+.form-control label {
+  font-size: 14px;
+  margin-bottom: 0.5rem;
+  color: rgba(0, 0, 0, 0.9);
+}
+
+.form-control input[type='text'],
+.form-control input[type='password'],
+.form-control input[type='date'] {
+  height: 42px;
+  padding: 12px;
+  border: 2.5px solid var(--main-light-gray);
+  border-radius: 0.375rem;
+}
+
+.form-control input:focus {
+  outline: none;
+  border-color: var(--main-celeste);
+}
+
+.form-control fieldset {
+  border: 0;
+  padding: 0;
+}
+
+.buttons-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.form-control-button {
+  padding: 0.5rem 1.5rem;
+  border: none;
+  border-radius: 0.375rem;
+  color: white;
+}
+
+.form-control-button[type='submit'] {
+  background-color: var(--main-green);
+}
+
+.form-control-button[type='reset'] {
+  background-color: var(--main-yellow);
+}
+
+.userType-container legend,
+.interests-container legend {
+  margin-bottom: 0.5rem;
+}
+
+.interests-container label {
+  margin-right: 1rem;
+}
