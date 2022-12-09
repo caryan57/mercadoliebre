@@ -56,9 +56,9 @@ main {
 .item-nombre {
   margin-top: 0;
   margin-top: 12px;
-  display: none;
   font-size: 12px;
   color: var(--main-dark-gray);
+  display: none;
 }
 
 .item-precio,
@@ -91,6 +91,7 @@ main {
   position: absolute;
   right: 7%;
   top: -15%;
+  transition: ease-out 0.4s;
 }
 
 .item-envio-full,
@@ -113,6 +114,12 @@ main {
   box-shadow: -1px 4px 20px 0px rgba(0, 0, 0, 0.3);
 }
 
+.envio-icon-container:hover {
+  transform: rotateZ(-90deg);
+}
+
+/* .item:hover  */
+
 @media (min-width: 361px) {
 }
 
@@ -120,7 +127,7 @@ main {
   .item {
     width: 38%;
   }
-  .item-nombre {
+  .item:hover .item-nombre {
     display: block;
   }
 

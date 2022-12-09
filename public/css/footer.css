@@ -22,6 +22,11 @@ footer {
   font-size: 2em;
   margin-bottom: 10px;
   color: var(--main-celeste);
+  cursor: pointer;
+}
+
+.footer-info i:hover {
+  color: var(--main-green);
 }
 
 .footer-info:nth-child(3) {
@@ -35,5 +40,21 @@ footer {
 @media (min-width: 768px) {
   .footer-info {
     width: 350px;
+  }
+}
+
+@media (min-width: 1024px) {
+  footer {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .footer-info {
+    width: 25%;
+  }
+
+  .copyright {
+    width: 100%;
   }
 }
