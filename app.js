@@ -17,3 +17,7 @@ app.get('/', (req, res) => {
 app.get('/register', (req, res) => {
   return res.sendFile(app.get('views') + '/register.html');
 });
+
+app.get('/login', (req, res) => {
+  return res.sendFile(app.get('views') + '/login.html');
+});
