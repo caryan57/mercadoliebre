@@ -5,9 +5,10 @@
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node src/app.js"
+    "start": "node src/app.js",
+    "test": "nodemon src/app.js"
   },
-  "author": "",
+  "author": "Carlos Olivares",
   "license": "ISC",
   "dependencies": {
     "dotenv": "^16.0.3",
