@@ -115,7 +115,7 @@ main {
   box-shadow: -1px 4px 20px 0px rgba(0, 0, 0, 0.3);
 }
 
-.envio-icon-container:hover {
+.item:hover .envio-icon-container {
   transform: rotateZ(-90deg);
 }
 
